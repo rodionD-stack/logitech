@@ -15,6 +15,10 @@ body {
   padding-right: calc(50% - 570px);
 }
 
+.content {
+  min-height: calc(100vh - 100px);
+}
+
 /*__TEXT__*/
 .heading {
   font-style: normal;
@@ -308,6 +312,14 @@ body {
   margin-bottom: 870px;
 }
 
+.blocks__text {
+  border-left: 1px solid #494949;
+  margin-left: 30px;
+  padding-left: 30px;
+}
+.blocks__text:first-child {
+  border-left: none;
+}
 /*__SETTINGS__*/
 
 .settings {
@@ -432,8 +444,78 @@ body {
 
 .comfort__comf {
   display: flex;
+  margin-top: 100px;
+  margin-left: -85px;
 }
 
 .comfort__fast {
   display: flex;
+  margin-bottom: 100px;
+  margin-right: -85px;
+}
+
+.comf__comfText,
+.fast__fastText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.comf__comfText {
+  margin-left: 30px;
+}
+
+.fast__fastText {
+  margin-right: 30px;
+}
+
+.comfText__heading,
+.fastText__heading {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #2f3132;
+  margin-bottom: 30px;
+}
+
+.fastText__heading {
+  text-align: right;
+}
+
+.comfText__text,
+.fastText__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: right;
+
+  color: #2f3132;
+}
+
+.comfText__text {
+  text-align: left;
+}
+
+/*__FOOTER__*/
+
+.footer {
+  background-color: #2f3132;
+  height: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer__copyright {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+
+  color: #c7c8c8;
 }
